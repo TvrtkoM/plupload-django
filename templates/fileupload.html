@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"> 
+{% load handlebars_tags %}
+  <head>
+    <meta charset="utf-8" />
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Upload File</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Tvrtko Majstorovic" />
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/static/css/fileupload.css" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="span4 offset4">
+          <a href="#">Latest Files</a>
+        </div>
+      </div>
+      <div class="row" id="file-selection">
+        <div class="span4 offset4">
+          <button type="button" id="file-to-upload">
+            Choose File
+          </button>
+        </div>
+      </div>
+    </div>
+<script> var handlebars_config = {"loadurl": "/static/js/templates/{tpl}.js"};</script>
+<script src="/static/js/handlebars/handlebars.js"></script>
+<script src="/static/js/handlebars/handlebars.django.js"></script>
+<script src="/static/js/handlebars/jquery.min.js"></script>
+<script src="/static/js/handlebars/ember.js"></script>
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/plupload/js/plupload.full.js"></script>
+{% handlebars_template "fileupload_tmpl" %}
+</script>
+<script src="/static/js/site.js"></script>
+
+  </body>
+</html>

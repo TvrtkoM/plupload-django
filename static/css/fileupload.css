@@ -1,0 +1,43 @@
+body {
+  background-color: #77c4d3;
+}
+.container {
+  background: -webkit-linear-gradient(top, #daede2, #77c4d3);
+  height: 140px;
+  padding-top: 0.5em;
+}
+.container a {
+  color: #333745;
+}
+.container .row:first-child {
+  text-align: right;
+}
+.container .row#file-selection {
+  text-align: center;
+}
+.container .row#file-selection div {
+  border: 1px dotted #77c4d3;
+  background: #f2edbc;
+}
+.container .row#file-selection div:hover {
+  border-style: solid;
+  background: #f0d770;
+}
+.container .row:nth-child(3) div:first-child {
+  text-align: left;
+}
+.container .row:nth-child(3) div {
+  text-align: right;
+}
+.container .row:nth-child(3) .action-button {
+  margin-top: 1em;
+}
+.container .row:nth-child(3) .action-button div {
+  text-align: center;
+}
+.container p {
+  margin: 0;
+}
+.container .row {
+  margin-bottom: 0.5em;
+}

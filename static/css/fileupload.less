@@ -1,0 +1,51 @@
+@lightblue: #DAEDE2;
+@blue: #333745;
+@lightsand: #F2EDBC;
+@sand: #F0D770;
+@navyblue: #77C4D3;
+
+body {
+  background-color: @navyblue;
+}
+.container {
+  background: -webkit-linear-gradient(top, @lightblue, @navyblue);
+  height:140px;
+  padding-top:0.5em;
+  a {
+    color: @blue;
+  }
+  .row:first-child {
+    text-align: right;
+  }
+  .row#file-selection {
+    text-align: center;
+    div {
+      border: 1px dotted @navyblue;
+      background: @lightsand;
+    }
+    div:hover {
+      border-style: solid;
+      background: @sand;
+    }
+  }
+  .row:nth-child(3) {
+    div:first-child {
+      text-align: left;
+    }
+    div {
+      text-align: right;
+    }
+    .action-button {
+      margin-top:1em;
+      div {
+        text-align: center;
+      }
+    }
+  }
+  p {
+    margin:0;
+  }
+  .row {
+    margin-bottom:0.5em;
+  }
+}
