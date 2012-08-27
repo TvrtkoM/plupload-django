@@ -1,0 +1,32 @@
+Preparations
+------------
+
+install django-handlebars from here (allows to use EmberJS)
+git://github.com/TvrtkoM/django-handlebars.git
+
+add 'django_handlebars' to settings.INSTALLED_APPS
+
+append this to settings.py:
+
+HANDLEBARS_USE_EMBER = True
+HANDLEBARS_TPL_DIR = path.join(path.dirname(path.abspath(__file__)), 'static', 'js', 'templates-src')
+HANDLEBARS_TPL_CMPDIR = path.join(path.dirname(path.abspath(__file__)), 'static', 'js', 'templates')
+
+install nspr:
+sudo aptitude install libnspr4 libnspr4-dev (on Ubuntu)
+
+install python-spidermonkey:
+pip install python-spidermonkey
+
+add something like this to project urls.py url patterns:
+url(r'^fileupload/', include('fileupload.urls'))
+
+run:
+./manage.py collectstatic
+./manage.py compilehandlebars
+./manage.py runserver
+
+go to:
+http://127.0.0.1:8000/fileupload/
+
+I think that's it.
