@@ -5,6 +5,7 @@ install django-handlebars from here (allows to use EmberJS)
 git://github.com/TvrtkoM/django-handlebars.git
 
 add 'django_handlebars' to settings.INSTALLED_APPS
+and of course this apps name (whatever u named it - eg. 'fileupload')
 
 append this to settings.py:
 
